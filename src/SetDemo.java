@@ -11,6 +11,7 @@
  */
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -22,6 +23,11 @@ public class SetDemo {
         HashSet<Integer> hashSet1 = new HashSet<>(Arrays.asList(1,2,11,2,14,23));
         LinkedHashSet<Integer> hashSet2 = new LinkedHashSet<>(Arrays.asList(12,23,7,90,1));
         hashSet2.forEach(System.out::println);
+        Set<Integer> hashSet3 = Collections.synchronizedSet(hashSet); //synchronized thread-safe set
+        //have to write sync block for concurrent operations
+        synchronized(hashSet3){
+           hashSet3.forEach(System.out::println);
+        }
         //Union of two sets
         Set<Integer> union = new TreeSet<>(hashSet); //by default sorting in TreeSet
         union.addAll(hashSet1); //union operation
