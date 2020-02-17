@@ -93,6 +93,5 @@ public class StreamDemo {
         System.out.println(genderListMap);
         //sort by age in the collection
         people.stream().sorted(Comparator.comparing(Person::getAge).reversed()).forEach(System.out::println);
-        Thread thread = new Thread();
     }
 }
