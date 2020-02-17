@@ -27,6 +27,7 @@ public class AnonymousClass {
             @Override
             public void getName() {
                 System.out.println("Student " + name + " from "+ school);
+                leave();
             }
 
             @Override

@@ -10,7 +10,6 @@ class CustomComparator implements Comparator<Character>{
         o2 = temp;
         return o1.compareTo(o2);
     }
-
 }
 
 public class PriorityQueueDemo {
