@@ -1,5 +1,5 @@
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.stream.*;
 
 import static java.util.stream.Collectors.groupingBy;
 
@@ -93,6 +93,11 @@ public class StreamDemo {
         System.out.println(genderListMap);
         //sort by age in the collection
         people.stream().sorted(Comparator.comparing(Person::getAge).reversed()).forEach(System.out::println);
-        Thread thread = new Thread();
+        //IntStreams
+        IntStream.range(1, 10).forEach(System.out::println);
+        int[] intArray = IntStream.range(0, 10).toArray();
+        for(int item: intArray){
+            System.out.println(item);
+        }
     }
 }
