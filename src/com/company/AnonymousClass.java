@@ -1,3 +1,4 @@
+package com.company;
 /**
  * Anonymous Classes
  * Classes without names as we know it and yeah just single object.
@@ -11,7 +12,7 @@
  * Limitations:
  * No static blocks
  * Can use constants/variables declared within the braces of it
- * Can use local methods inside the block but can't use it with instance as Student interface doesn't have it
+ * Can use local methods inhttps://github.com/mstech66/javaBasic.gitside the block but can't use it with instance as Student interface doesn't have it
  */
 interface Student{
     String school = "VVM";
