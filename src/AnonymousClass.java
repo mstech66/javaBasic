@@ -57,7 +57,7 @@ public class AnonymousClass {
         };
         Thread t = new Thread(runnable);
         t.start();
-        //within constructor (used in designing GUI)
+        //within constructor (used in designing GUIs)
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
