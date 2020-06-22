@@ -1,3 +1,11 @@
+package com.company;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 /**
  * Sets
  * Sets are unlike maps they just have list of distinct values.
@@ -9,13 +17,6 @@
  * LinkedHashSet maintains the order of inserted elements. It has O(1) complexity for add, remove and contains
  * The basic operations in set are add, delete, clear, size and contains, etc.
  */
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
 
 public class SetDemo {
     public static void main(String[] args) {
