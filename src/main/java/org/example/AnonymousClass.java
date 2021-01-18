@@ -1,4 +1,4 @@
-package com.company;
+package org.example;
 /**
  * Anonymous Classes
  * Classes without names as we know it and yeah just single object.
