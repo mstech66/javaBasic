@@ -65,5 +65,19 @@ public class SetDemo {
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
+
+        //CopyOnWriteArraySet or COWAS is a thread-safe set implementation
+        //COWAS is better when you have less writes and more reads for your set
+        //the iteration is more performative rather than using regular synchronized sets
+        //how it is better is in the implementation itself...
+        //it basically has a list of elements in an array, and when changing the list, it copies the array
+        CopyOnWriteArraySet<String> copyOnWriteArraySet = new CopyOnWriteArraySet<>();
+        copyOnWriteArraySet.add("Book1");
+        copyOnWriteArraySet.add("Book3");
+        copyOnWriteArraySet.add("Book2");
+        copyOnWriteArraySet.add("Book4");
+
+        System.out.println(copyOnWriteArraySet);
+
     }
 }

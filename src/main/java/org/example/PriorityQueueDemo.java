@@ -5,11 +5,7 @@ import java.util.PriorityQueue;
 class CustomComparator implements Comparator<Character>{
     @Override
     public int compare(Character o1, Character o2) {
-        Character temp;
-        temp = o1;
-        o1 = o2;
-        o2 = temp;
-        return o1.compareTo(o2);
+        return o2.compareTo(o1);
     }
 }
 
@@ -25,6 +21,7 @@ public class PriorityQueueDemo {
 
         PriorityQueue<Character> characterPriorityQueue = new PriorityQueue<>(new CustomComparator());
         characterPriorityQueue.add('a'); //97
+        characterPriorityQueue.add('b'); //98
         characterPriorityQueue.add('A'); //65
         System.out.println(characterPriorityQueue.peek());
         for (Character character : characterPriorityQueue) {
